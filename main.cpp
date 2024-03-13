@@ -50,18 +50,13 @@ int main(){
     std::cin >> num2;
 
   //using If/else statement to perform operation
-    if (operation == '+'){
-      std::cout << "Result " << add(num1, num2);
-    }
-    if (operation == '-'){
-        std::cout << "Result " << subtract(num1, num2);
-    }
-     if (operation == '*'){
-        std::cout << "Result " << multiply(num1, num2);
-    }
-    if (operation == '/'){
-        std::cout << "Result " << divide(num1, num2);
-    }
+    if (operation == '+')
+      std::cout << "Result " << num1 << operation << num2 <<  " = "   << add(num1, num2);
+    if (operation == '-')
+        std::cout << "Result " << num1 << operation << num2 <<  " = "   << subtract(num1, num2);
+     if (operation == '*')
+        std::cout << "Result " << num1 << operation << num2 <<  " = "   << multiply(num1, num2);
+    if (operation == '/')
+        std::cout <<"Result " << num1 << operation << num2 <<  " = "   << divide(num1, num2);
     return 0;
 }
-
